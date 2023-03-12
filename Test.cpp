@@ -12,14 +12,9 @@
 
 using namespace std;
 
-// Setup ur function here
-typedef struct mahasiswa
-{
-    string nama;
-    string prodi;
-    string hobi;
-    int semester;
-} identitas;
+// Setup ur function here -------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------------------
 
 int main()
 {
@@ -39,7 +34,7 @@ int main()
             return 1;
         }
         ofstream output;
-        sprintf(filename, "Files/output/input%03i.txt", count);
+        sprintf(filename, "Files/output/output%03i.txt", count);
         output.open(filename);
         if (!output)
         {
@@ -47,37 +42,20 @@ int main()
         }
 
         printf("Test-case ke %d\n", count++);
-        // Insert ur code here ---------------------------------------------------------
+        // Insert ur code here --------------------------------------------------------------
 
-            //  Input Section ---------------------------------------------------------------
-                identitas diri;
-                getline(cin >> ws, diri.nama);
-                input << diri.nama << endl;
-                getline(cin >> ws, diri.prodi);
-                input << diri.prodi << endl;
-                cin >> diri.semester;
-                input << diri.semester;
-                getline(cin >> ws, diri.hobi);
-                input << diri.hobi << endl;
+        //  Input Section -------------------------------------------------------------------
 
-            // Output Section --------------------------------------------------------------
-                cout << "Hi, nama saya " << diri.nama << "." << endl;
-                cout << "Saya berasal dari prodi " << diri.prodi << " dan sekarang semester " << diri.semester;
-                cout << ".\nHobi saya adalah " << diri.hobi << endl;
-                cout << "Senang berkenalan denganmu" << endl;
+        // Output Section -------------------------------------------------------------------
 
-                output << "Hi, nama saya " << diri.nama << "." << endl;
-                output << "Saya berasal dari prodi " << diri.prodi << " dan sekarang semester " << diri.semester;
-                output << ".\nHobi saya adalah " << diri.hobi << "." << endl;
-                output << "Senang berkenalan denganmu." << endl;
-
-        // -----------------------------------------------------------------------------
+        // ----------------------------------------------------------------------------------
 
         // Closing Files
         input.close();
         output.close();
         cout << "Y? ";
         cin >> check;
+        cout << endl;
     }
 
     return 0;
