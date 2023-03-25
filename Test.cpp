@@ -22,8 +22,9 @@ int main()
     char filename[27];
     int count = 0;
     bool check = true;
+    int max_file = 10;
 
-    while (check)
+    while (check && count < max_file)
     {
         // Opening files
         ofstream input;
