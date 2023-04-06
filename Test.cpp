@@ -26,9 +26,10 @@ int main()
     // Setup filename
     char filename[27];
     int count = 0;
-    bool check = true;
+    int check = true;
+    int max_file = 5;
 
-    while (check)
+    while (check && cout <= max_file)
     {
         // Opening files
         ofstream input;
@@ -50,26 +51,8 @@ int main()
         // Insert ur code here ---------------------------------------------------------
 
             //  Input Section ---------------------------------------------------------------
-                identitas diri;
-                getline(cin >> ws, diri.nama);
-                input << diri.nama << endl;
-                getline(cin >> ws, diri.prodi);
-                input << diri.prodi << endl;
-                cin >> diri.semester;
-                input << diri.semester;
-                getline(cin >> ws, diri.hobi);
-                input << diri.hobi << endl;
 
             // Output Section --------------------------------------------------------------
-                cout << "Hi, nama saya " << diri.nama << "." << endl;
-                cout << "Saya berasal dari prodi " << diri.prodi << " dan sekarang semester " << diri.semester;
-                cout << ".\nHobi saya adalah " << diri.hobi << endl;
-                cout << "Senang berkenalan denganmu" << endl;
-
-                output << "Hi, nama saya " << diri.nama << "." << endl;
-                output << "Saya berasal dari prodi " << diri.prodi << " dan sekarang semester " << diri.semester;
-                output << ".\nHobi saya adalah " << diri.hobi << "." << endl;
-                output << "Senang berkenalan denganmu." << endl;
 
         // -----------------------------------------------------------------------------
 
