@@ -29,7 +29,7 @@ int main()
     int check = true;
     int max_file = 5;
 
-    while (check && cout <= max_file)
+    while (check && count <= max_file)
     {
         // Opening files
         ofstream input;
