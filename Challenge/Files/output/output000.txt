@@ -1,0 +1,2 @@
+Array yang sudah dibalik
+8 9 4 8 3 1 6 7 5 2 

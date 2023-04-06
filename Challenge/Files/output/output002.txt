@@ -1,0 +1,2 @@
+Array yang sudah dibalik
+17 13 11 7 5 3 2 
