@@ -12,21 +12,16 @@
 
 using namespace std;
 
-// Setup ur function here
-typedef struct mahasiswa
-{
-    string nama;
-    string prodi;
-    string hobi;
-    int semester;
-} identitas;
+// Setup ur function here -------------------------------------------------------------------
+
+// ------------------------------------------------------------------------------------------
 
 int main()
 {
     // Setup filename
     char filename[27];
     int count = 0;
-    int check = true;
+    bool check = true;
     int max_file = 5;
 
     while (check && count <= max_file)
@@ -40,7 +35,7 @@ int main()
             return 1;
         }
         ofstream output;
-        sprintf(filename, "Files/output/input%03i.txt", count);
+        sprintf(filename, "Files/output/output%03i.txt", count);
         output.open(filename);
         if (!output)
         {
@@ -48,12 +43,12 @@ int main()
         }
 
         printf("Test-case ke %d\n", count++);
-        // Insert ur code here ---------------------------------------------------------
+        // Insert ur code here --------------------------------------------------------------
 
             //  Input Section ---------------------------------------------------------------
-
+                
             // Output Section --------------------------------------------------------------
-
+                
         // -----------------------------------------------------------------------------
 
         // Closing Files
@@ -61,6 +56,7 @@ int main()
         output.close();
         cout << "Y? ";
         cin >> check;
+        cout << endl;
     }
 
     return 0;
